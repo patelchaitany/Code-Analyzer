@@ -19,7 +19,7 @@ var/
 *.egg-info/
 .installed.cfg
 *.egg
-
+task.md
 # Node.js
 node_modules/
 npm-debug.log
