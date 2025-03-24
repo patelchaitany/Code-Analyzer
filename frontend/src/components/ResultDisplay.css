@@ -1,0 +1,109 @@
+.result-display {
+  padding: 2rem;
+}
+
+.result-display h2 {
+  margin-top: 0;
+  color: #333;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.result-display h3 {
+  border-bottom: 2px solid #eee;
+  padding-bottom: 0.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  color: #444;
+}
+
+/* Overall Score */
+.overall-score {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.score-circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 10px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.score-number {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.score-label {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 0.5rem;
+}
+
+/* Score Breakdown */
+.scores-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.score-gauge {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.gauge-container {
+  height: 12px;
+  background-color: #eee;
+  border-radius: 6px;
+  overflow: hidden;
+  margin: 0.5rem 0;
+}
+
+.gauge-fill {
+  height: 100%;
+  border-radius: 6px;
+  transition: width 0.5s ease-in-out;
+}
+
+.score-value {
+  font-size: 0.9rem;
+  text-align: right;
+  color: #666;
+}
+
+/* Recommendations */
+.recommendations-list {
+  padding-left: 1.5rem;
+  margin-top: 0;
+}
+
+.recommendation-item {
+  margin-bottom: 0.8rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .scores-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .score-circle {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .score-number {
+    font-size: 2.5rem;
+  }
+} 
