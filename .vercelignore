@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Node.js
+node_modules/
+
+# Development files
+.git/
+.github/
+.vscode/
+.idea/
+
+# Large directories in frontend that are not needed
+frontend/node_modules/
+
+# Other unnecessary files
+.DS_Store 

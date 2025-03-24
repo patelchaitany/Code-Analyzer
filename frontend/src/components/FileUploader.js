@@ -48,8 +48,13 @@ function FileUploader({ onAnalysisStart, onAnalysisResult, onError }) {
     try {
       onAnalysisStart();
       
+      // Determine the API endpoint based on environment
+      const apiUrl = process.env.NODE_ENV === 'production' 
+        ? '/api/analyze-code' 
+        : '/analyze-code';
+      
       // Send file to API for analysis
-      const response = await axios.post('/analyze-code', formData, {
+      const response = await axios.post(apiUrl, formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         }
