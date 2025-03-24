@@ -20,7 +20,8 @@
     },
     {
       "src": "/analyze-code",
-      "dest": "/api/index.py"
+      "dest": "/api/index.py",
+      "methods": ["POST", "OPTIONS"]
     },
     {
       "src": "/(.*)",
